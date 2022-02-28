@@ -1,2 +1,3 @@
-# pdf-bruteforcer
-demo about how to bruteforce password encrypted pdf file
+# pdf-cracker-demo
+
+Shows how a password secured pdf can be cracked
