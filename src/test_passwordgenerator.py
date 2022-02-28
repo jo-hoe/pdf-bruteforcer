@@ -19,5 +19,19 @@ class TestDatesGenerator(unittest.TestCase):
 
         self.assertListEqual(actual, expected)
 
+    def test_date_end_before_startgenerator(self):
+        generator = DatesGenerator(
+            startdate=datetime(1990, 12, 15), 
+            enddate=datetime(1990, 12, 13), 
+            format="%d%m%Y")
+
+        expected = []
+        actual = []
+
+        for item in generator.get_next_password():
+            actual.append(item)
+
+        self.assertListEqual(actual, expected)
+
 if __name__ == '__main__':
     unittest.main()
