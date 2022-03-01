@@ -11,13 +11,11 @@ class PdfBruteForcer():
     def bruteforce(self)-> str:
         for password in self.generator.get_next_password():
             try:
-                # open PDF file
                 with pikepdf.open(self.pdfFilePath, password=password) as pdf:
-                    # Password decrypted successfully, break out of the loop
+                    # password found, return it
                     return password
-                    break
-            except pikepdf._qpdf.PasswordError as e:
-                # wrong password, just continue in the loop
+            except pikepdf._qpdf.PasswordError as ex:
+                # password incorrect, test next one
                 continue
-
+        # no password found, return None
         return None
