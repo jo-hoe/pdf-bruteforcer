@@ -3,12 +3,11 @@
 [![Test Status](https://github.com/jo-hoe/pdf-bruteforcer/workflows/unittests/badge.svg)](https://github.com/jo-hoe/pdf-bruteforcer/actions?workflow=unittests)
 
 One of the big health insurance companies sends personal information
-in an encrypted PDF via mail.
-
-The mail that contains the PDF also contained details about the structure
-of the password (i.e. the birth date of the data subject + formatting details).
-The project demonstrates how a password secured PDF
-can be attacked with this information.
+in an encrypted PDF via mail. The mail that contains the PDF also 
+contained details about the structure of the password 
+(i.e. the birth date of the data subject + formatting details).
+The project demonstrates how a password secured PDF can be attacked 
+with this information.
 
 ## Purpose
 
