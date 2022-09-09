@@ -12,6 +12,10 @@ class PasswordGenerator(ABC):
     def get_next_password(self) -> str:
         pass
 
+    @abstractmethod
+    def get_password_count(self) -> int:
+        pass
+
 class DatesGenerator(PasswordGenerator):
 
     def __init__(self, startdate: datetime, enddate: datetime, format: str):
@@ -28,4 +32,6 @@ class DatesGenerator(PasswordGenerator):
         
         return
 
-        
+    def get_password_count(self) -> int:
+        delta = self.enddate - self.startdate
+        return delta.days
