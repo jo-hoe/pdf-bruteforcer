@@ -13,11 +13,13 @@ with this information.
 
 This project is only for educational purposes.
 It demonstrates how easily a password can be guessed given
-information about the password is provided.
+information about the password is provided and demostrates
+that the applied password is ineffective in providing
+security.
 
 ### Real Attacks
 
-In a real world scenario an attacker might us a faster
+In a real world scenario an attacker might use a faster
 programming language (e.g. C++) instead of Python to reduce
 the runtime. If no additional details about the password about
 are known, attackers might use lists of common passwords and
