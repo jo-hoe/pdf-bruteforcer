@@ -11,7 +11,7 @@ filename = "password-protected-document.pdf"
 if len(sys.argv) > 1:
     filename = sys.argv[1]
 
-bruteforcer = PdfBruteForcer("password-protected-document.pdf", generator)
+bruteforcer = PdfBruteForcer(filename, generator)
 print("starting bruteforce attack and testing passwords")
 password = bruteforcer.bruteforce()
 
